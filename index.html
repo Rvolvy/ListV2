@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM - Pradipta</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body id="body">
+  <div class="flex flex-col justify-center items-center bg-[#21232e] h-[100vh]">
+    <form class="flex flex-col justify-center items-center gap-[20px]" id="form" onclick="return false">
+      <div class="flex flex-col justify-center items-center gap-[5px]">
+        <label class="text-white font-semibold">Nama</label>
+        <input class="outline-none w-[300px] h-[30px] px-[20px] py-[5px] rounded-[5px]" type="text" id="nama" placeholder="Isi Nama Anda">
+      </div>
+      <div class="flex flex-col justify-center items-center gap-[5px]">
+        <label class="text-white font-semibold">Kelas</label>
+        <select class="outline-none  w-[300px] h-[30px] px-[20px] py-[5px] rounded-[5px]" id="kelas">
+          <option value="X">X</option>
+          <option value="XI">XI</option>
+          <option value="XII">XII</option>
+        </select>
+      </div>
+      <div class="flex flex-col justify-center items-center gap-[5px]">
+        <label class="text-white font-semibold">Jurusan</label>
+        <select class="outline-none w-[300px] h-[30px] px-[20px] py-[5px] rounded-[5px]" id="jurusan">
+          <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
+          <option value="Akuntansi">Akuntansi</option>
+          <option value="Perhotelan">Perhotelan</option>
+        </select>
+      </div>
+      <input class="bg-[#00ff00] text-white font-bold w-[300px] px-[20px] py-[5px] rounded-[5px] cursor-pointer duration-[0.5s] hover:bg-[#008000]" type="submit" value="Submit" onclick="klik()">
+    </form>
+    <div class="flex flex-row justify-between items-center mt-[30px] w-[100%]">
+      <div style="overflow: auto;" class="bg-[#ffffff] w-[33%] h-[50vh] p-[10px]">
+        <p class="text-black text-[17px] text-center font-bold">Rekayasa Perangkat Lunak</p>
+        <ul class="mt-[10px]" id="rpl">
+
+        </ul>
+      </div>
+      <div style="overflow: auto;" class="bg-[#ffffff] w-[33%] h-[50vh] p-[10px]">
+        <p class="text-black text-[17px] text-center font-bold">Akuntansi</p>
+        <ul class="mt-[10px]" id="ak">
+
+        </ul>
+      </div>
+      <div style="overflow: auto;" class="bg-[#ffffff] w-[33%] h-[50vh] p-[10px]">
+        <p class="text-black text-[17px] text-center font-bold">Perhotelan</p>
+        <ul class="mt-[10px]" id="htl">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
